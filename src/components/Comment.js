@@ -5,7 +5,6 @@ const Comment = ({text, votes, id, thumbUpComment, thumbDownComment, removeComme
     {text} <span>votes: {votes}</span>
     <button onClick={() => thumbUpComment(id)}>Thumb up</button>
     <button onClick={() => thumbDownComment(id)}>Thumb down</button>
-    <button onClick={() => editComment(id, text)}>Edit</button>
     <button onClick={() => removeComment(id)}>X</button>
   </li>;
 

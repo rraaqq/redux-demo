@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import reducer from './reducer';
-import { addComment } from './actions';
+import reducer from './reducers/reducer';
+import { addComment } from './actions/actions';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
 const store = createStore(reducer);
